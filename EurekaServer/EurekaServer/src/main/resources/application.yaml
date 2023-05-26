@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Eureka-Server
+  security:
+    basic:
+      enabled: true
+    user:
+      name: Abhishek
+      password: Baghel
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+  #spring.security.basic.enabled=true
+  #spring.security.user.name=vasu
+  #spring.security.user.password=rajput
