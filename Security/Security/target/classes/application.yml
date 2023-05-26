@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/try
+    username: root
+    password: sergey
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+  application:
+    name: Security-Service
+
+#eureka:
+#  client:
+#    prefer-same-zone-eureka: false
+#    serviceUrl:
+#      defaultZone: http://10.0.61.193:8761/eureka/
+#  instance:
+#    prefer-Ip-Address: true
+#    instance-id: ${server.address}:${spring.application.name}:${server.port}
+
+server:
+  address: 10.0.61.193
+  port: 8081
+
